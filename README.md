@@ -20,7 +20,7 @@
 - 하루 섭취 칼로리 합산 표시
 
 ### 2. 식단 기록
-![Image](https://github.com/user-attachments/assets/185a3adc-ab91-4564-bf3e-bf96ab27fb2f)
+<img width="449" alt="Image" src="https://github.com/user-attachments/assets/185a3adc-ab91-4564-bf3e-bf96ab27fb2f" />
 
 - 음식명 검색 및 선택
 - 중복 등록 방지
@@ -28,7 +28,7 @@
 - 기록된 음식은 LocalStorage에 저장
 
 ### 3. 날짜별 식단 조회
-![Image](https://github.com/user-attachments/assets/48ce4f1f-9e73-40a7-a315-5e11e599383d)
+<img width="449" alt="Image" src="https://github.com/user-attachments/assets/48ce4f1f-9e73-40a7-a315-5e11e599383d" />
 
 - 날짜별 총 칼로리 확인
 - 섭취 음식 리스트 조회 가능
