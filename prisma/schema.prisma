@@ -1,0 +1,44 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           Int           @id @default(autoincrement())
+  name         String?
+  mealRecords  MealRecord[]
+}
+
+model Food {
+  id       Int     @id @default(autoincrement())
+  name     String
+  weight   Int
+  carbs    Int
+  protein  Int
+  fat      Int
+  kcal     Int
+
+  foodRecords FoodRecord[]
+}
+
+model MealRecord {
+  id        Int           @id @default(autoincrement())
+  userId    Int
+  mealType  String
+  createdAt DateTime      @default(now())
+  user      User          @relation(fields: [userId], references: [id])
+  foodRecords FoodRecord[]
+}
+
+model FoodRecord {
+  id           Int        @id @default(autoincrement())
+  weight       Int
+  mealRecordId Int?       // <-- optional 로 변경
+  mealRecord   MealRecord? @relation(fields: [mealRecordId], references: [id])
+  foodId       Int
+  food         Food       @relation(fields: [foodId], references: [id])
+}

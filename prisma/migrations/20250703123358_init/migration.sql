@@ -1,0 +1,19 @@
+-- CreateTable
+CREATE TABLE "MealRecord" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "mealType" TEXT NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+-- CreateTable
+CREATE TABLE "FoodRecord" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "name" TEXT NOT NULL,
+    "weight" INTEGER NOT NULL,
+    "carbs" INTEGER NOT NULL,
+    "protein" INTEGER NOT NULL,
+    "fat" INTEGER NOT NULL,
+    "kcal" INTEGER NOT NULL,
+    "mealId" INTEGER NOT NULL,
+    CONSTRAINT "FoodRecord_mealId_fkey" FOREIGN KEY ("mealId") REFERENCES "MealRecord" ("id") ON DELETE CASCADE ON UPDATE CASCADE
+);
