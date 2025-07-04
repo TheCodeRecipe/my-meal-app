@@ -39,6 +39,7 @@
    npm install
 
 2. Prisma 초기화 (SQLite 사용)
+   
    npx prisma generate
    
    npx prisma db push
