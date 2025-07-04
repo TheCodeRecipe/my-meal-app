@@ -25,7 +25,7 @@
 - 음식명 검색 및 선택
 - 중복 등록 방지
 - 용량 조절, 삭제 기능
-- 기록된 음식은 LocalStorage에 저장
+- 기록된 음식은 DB에 저장
 
 ### 3. 날짜별 식단 조회
 <img width="449" alt="Image" src="https://github.com/user-attachments/assets/48ce4f1f-9e73-40a7-a315-5e11e599383d" />
