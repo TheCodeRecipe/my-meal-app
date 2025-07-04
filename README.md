@@ -40,7 +40,8 @@
 
 2. Prisma 초기화 (SQLite 사용)
    npx prisma generate
+   
    npx prisma db push
 
-3. 개발 서버 실행
+4. 개발 서버 실행
    npm run dev
