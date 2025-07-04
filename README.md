@@ -36,6 +36,7 @@
 ## 실행 방법
 
 1. 패키지 설치
+   
    npm install
 
 2. Prisma 초기화 (SQLite 사용)
@@ -44,5 +45,6 @@
    
    npx prisma db push
 
-4. 개발 서버 실행
+3. 개발 서버 실행
+   
    npm run dev
